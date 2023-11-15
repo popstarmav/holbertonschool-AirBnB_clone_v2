@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from flask import flask
+"""Import flask module"""
+from flask import Flask
 
 app = flask(__name__)
 
@@ -13,5 +14,6 @@ def hello_hbnb():
     """
     return "Hello HBNB!"
 
+"""sever only starts if script is direclty activted"
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
