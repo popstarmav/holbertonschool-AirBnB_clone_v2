@@ -5,6 +5,12 @@ app = flask(__name__)
 
 @app.route('/')
 def hello_hbnb():
+    """
+    A simple Flask route.
+
+    Returns:
+    str: A string contains a greeting message
+    """
     return "Hello HBNB!"
 
 if __name__ == "__main__":
